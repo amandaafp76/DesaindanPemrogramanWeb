@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Sederhana</title>
+        <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Formulir Dengan "Target: _self"</legend>
+                <label for="depan">Nama Depan:</label><br>
+                <input type="text" id="depan" name="i_name" required><br>
+                <label for="n_belakang">Nama Belakang:</label><br>
+                <input type="text" id="n_belakang" name="i_belakang" required><br><br>
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+
+        <form action="/action_page.php" method="post" target="_blank">
+            <fieldset>
+                <legend>Formulir Dengan "Target: _blank"</legend>
+                <label for="depan2">Nama Depan:</label><br>
+                <input type="text" id="depan2" name="i_name" required><br>
+                <label for="n_belakang2">Nama Belakang:</label><br>
+                <input type="text" id="n_belakang2" name="i_belakang" required><br><br>
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+
+        <form action="/action_page.php" method="get" target="_parent">
+            <fieldset>
+                <legend>Formulir Dengan "Target: _parent"</legend>
+                <label for="depan3">Nama Depan:</label><br>
+                <input type="text" id="depan3" name="i_name" required><br>
+                <label for="n_belakang3">Nama Belakang:</label><br>
+                <input type="text" id="n_belakang3" name="i_belakang" required><br><br>
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+        <p>Jika anda mengklik tombol "Kirim", data formulir akan dikirim ke halaman bernama "/action_page.php.</p>
+        <p>Saya dapat mengetahui cara memasukkan nama depan dan nama belakang, mengetahui tombol "Kirim" untuk mengirim data ke /action_page.php 
+            dan tombol "Reset" untuk mengosongkan input. Lalu dapat mengetahui perbedaan target:_self digunakan untuk mengirim form pada halaman 
+            yang sama sedangkan target:_blank digunakan untuk mengirim form ke halaman yang baru, dan target:_parent hampir sama dengan target:_self
+            yaitu mengirim form pada halaman yang sama.
+        </p>
+    </body>
+</html>
