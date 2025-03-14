@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Event</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Amanda Fahma Putri">
+        <meta name="nim" content="243307065">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            nav {
+                float: left;
+                width: 20px;
+                height: 300px;
+                background: #ccc;
+                padding: 20px;
+                width: 30%;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 20px;
+            }
+
+            article {
+                float: right;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 620px;
+            }
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media(max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Judul Website</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gambar.html">Gambar</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>Gambar Pemandangan</h1>
+                <img src="gambar.jpg" alt="Pemandangan" width="250px" height="150px" onclick="this.style.height='100px'" ondblclick="this.style.height='150px'">
+                <img src="gambar1.jpg" alt="Pemandangan indah" width="250px" height="150px" onmousedown="this.style.width='200px'" onmousemove="this.style.width='300px'">
+                <img src="gambar2.jpg" alt="Pemandangan menakjubkan" width="250px" height="150px">
+                <img src="gambar4.jpg" alt="Gambar 4" width="250px" height="150px">
+                <img src="gambar5.jpg" alt="Gambar 5" width="250px" height="150px">
+                <img src="gambar6.jpg" alt="Pemandangan" width="250px" height="150px">
+                <p> Kesimpulan yang saya dapatkan adalah dapat mengetahui cara menampilkan halaman web yang terdiri dari header, navigasi, artikel, dan footer. Navigasi di sisi kiri 
+                    berisi tautan yang menuju pada halaman lainnya, sementara artikel menampilkan enam gambar pemandangan. Halaman ini juga responsif, sehingga 
+                    tampilan akan menyesuaikan jika layar lebih kecil dari 600px. "onclick dan ondblclick" dapat mengubah ukuran pada gambar saat diklik atau digerakkan dengan 
+                    mouse, seperti mengubah tinggi gambar  serta "onmousedown dan onmousemove" digunakan untuk mengubah lebar saat tombol mouse ditekan dan digerakkan. </p>
+            </article>
+        </section>
+
+        <footer>
+            <p>@Copyright Amanda Fahma Putri_243307065</p>
+        </footer>
+    </body>
+</html>
