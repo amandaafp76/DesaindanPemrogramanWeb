@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pseudo-Class Selector</title>
+        <style>
+        p { 
+            display: none;
+            background-color: darkgray;
+            padding: 20px;
+        }
+
+        div:hover p {
+            display: block;
+        }
+        a {
+            display: none;
+            background-color: darkcyan;
+            padding: 20px;
+            color: black;
+        }
+        div:hover a {
+            display: block;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Pseudo-Class Selector</h2>
+        </header>
+        <div>Letakkan kursor disini untuk melihat div element
+            <p>Saya adalah element p</p>
+            <div>Letakkan kursor disini untuk melihat link
+                <a href="Link">Link</a>
+        </div>
+    </body>
+</html>

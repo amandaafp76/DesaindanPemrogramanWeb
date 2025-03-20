@@ -1,0 +1,94 @@
+/* Mengatur tampilan seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header dengan warna biru dan teks kuning */
+header {
+    background-color: blue;
+    color: yellow;
+    text-align: left;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Sub-teks dalam header */
+.sub-header {
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Kontainer utama dengan layout fleksibel */
+#container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Navigasi menu */
+#menu {
+    width: 25%;
+    border: 2px dashed gray;
+    padding: 10px;
+}
+
+/* Menghilangkan bullet list */
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Item menu */
+#menu li {
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* Link dalam menu */
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+/* Efek hover pada link */
+#menu a:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+/* Menu aktif */
+#menu a.active {
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Bagian utama (konten) */
+#content {
+    width: 75%;
+    text-align: center;
+}
+
+/* Ukuran logo */
+#content img {
+    width: 100px;
+}
+
+/* Warna teks pada deskripsi */
+#content p {
+    color: red;
+}
+
+/* Footer dengan latar belakang abu-abu */
+#footer {
+    background-color: lightblue;
+    text-align: right;
+    padding: 10px;
+    margin-top: 20px;
+}
