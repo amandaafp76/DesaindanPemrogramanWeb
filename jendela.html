@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Contoh Dialog jQuery UI</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        #dialog {
+            display: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Contoh Basic Dialog</h2>
+    <button id="bukaDialog">Buka Dialog</button>
+
+    <div id="dialog" title="Pesan Selamat Datang">
+        <p>Halo! Ini adalah jendela dialog sederhana menggunakan jQuery UI.</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#bukaDialog").click(function(){
+                $("#dialog").dialog();
+            });
+        });
+    </script>
+
+</body>
+</html>
